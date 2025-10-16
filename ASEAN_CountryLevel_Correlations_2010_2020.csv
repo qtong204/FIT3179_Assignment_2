@@ -1,0 +1,361 @@
+Var1,Var2,Correlation,Country
+CO2_Emissions_Total,CO2_Emissions_Total,1,Brunei
+GHG_Emissions_Total,CO2_Emissions_Total,0.972,Brunei
+PM25_Exposure,CO2_Emissions_Total,0.178,Brunei
+Renewable_Energy_%,CO2_Emissions_Total,NA,Brunei
+GDP (Current USD),CO2_Emissions_Total,-0.246,Brunei
+GDP per Capita (Current USD),CO2_Emissions_Total,-0.302,Brunei
+CO2_Emissions_Total,GHG_Emissions_Total,0.972,Brunei
+GHG_Emissions_Total,GHG_Emissions_Total,1,Brunei
+PM25_Exposure,GHG_Emissions_Total,0.093,Brunei
+Renewable_Energy_%,GHG_Emissions_Total,NA,Brunei
+GDP (Current USD),GHG_Emissions_Total,-0.092,Brunei
+GDP per Capita (Current USD),GHG_Emissions_Total,-0.137,Brunei
+CO2_Emissions_Total,PM25_Exposure,0.178,Brunei
+GHG_Emissions_Total,PM25_Exposure,0.093,Brunei
+PM25_Exposure,PM25_Exposure,1,Brunei
+Renewable_Energy_%,PM25_Exposure,NA,Brunei
+GDP (Current USD),PM25_Exposure,0.132,Brunei
+GDP per Capita (Current USD),PM25_Exposure,0.021,Brunei
+CO2_Emissions_Total,Renewable_Energy_%,NA,Brunei
+GHG_Emissions_Total,Renewable_Energy_%,NA,Brunei
+PM25_Exposure,Renewable_Energy_%,NA,Brunei
+Renewable_Energy_%,Renewable_Energy_%,1,Brunei
+GDP (Current USD),Renewable_Energy_%,NA,Brunei
+GDP per Capita (Current USD),Renewable_Energy_%,NA,Brunei
+CO2_Emissions_Total,GDP (Current USD),-0.246,Brunei
+GHG_Emissions_Total,GDP (Current USD),-0.092,Brunei
+PM25_Exposure,GDP (Current USD),0.132,Brunei
+Renewable_Energy_%,GDP (Current USD),NA,Brunei
+GDP (Current USD),GDP (Current USD),1,Brunei
+GDP per Capita (Current USD),GDP (Current USD),0.991,Brunei
+CO2_Emissions_Total,GDP per Capita (Current USD),-0.302,Brunei
+GHG_Emissions_Total,GDP per Capita (Current USD),-0.137,Brunei
+PM25_Exposure,GDP per Capita (Current USD),0.021,Brunei
+Renewable_Energy_%,GDP per Capita (Current USD),NA,Brunei
+GDP (Current USD),GDP per Capita (Current USD),0.991,Brunei
+GDP per Capita (Current USD),GDP per Capita (Current USD),1,Brunei
+CO2_Emissions_Total,CO2_Emissions_Total,1,Cambodia
+GHG_Emissions_Total,CO2_Emissions_Total,0.998,Cambodia
+PM25_Exposure,CO2_Emissions_Total,-0.12,Cambodia
+Renewable_Energy_%,CO2_Emissions_Total,-0.988,Cambodia
+GDP (Current USD),CO2_Emissions_Total,0.969,Cambodia
+GDP per Capita (Current USD),CO2_Emissions_Total,0.961,Cambodia
+CO2_Emissions_Total,GHG_Emissions_Total,0.998,Cambodia
+GHG_Emissions_Total,GHG_Emissions_Total,1,Cambodia
+PM25_Exposure,GHG_Emissions_Total,-0.158,Cambodia
+Renewable_Energy_%,GHG_Emissions_Total,-0.985,Cambodia
+GDP (Current USD),GHG_Emissions_Total,0.972,Cambodia
+GDP per Capita (Current USD),GHG_Emissions_Total,0.965,Cambodia
+CO2_Emissions_Total,PM25_Exposure,-0.12,Cambodia
+GHG_Emissions_Total,PM25_Exposure,-0.158,Cambodia
+PM25_Exposure,PM25_Exposure,1,Cambodia
+Renewable_Energy_%,PM25_Exposure,0.18,Cambodia
+GDP (Current USD),PM25_Exposure,-0.165,Cambodia
+GDP per Capita (Current USD),PM25_Exposure,-0.18,Cambodia
+CO2_Emissions_Total,Renewable_Energy_%,-0.988,Cambodia
+GHG_Emissions_Total,Renewable_Energy_%,-0.985,Cambodia
+PM25_Exposure,Renewable_Energy_%,0.18,Cambodia
+Renewable_Energy_%,Renewable_Energy_%,1,Cambodia
+GDP (Current USD),Renewable_Energy_%,-0.933,Cambodia
+GDP per Capita (Current USD),Renewable_Energy_%,-0.924,Cambodia
+CO2_Emissions_Total,GDP (Current USD),0.969,Cambodia
+GHG_Emissions_Total,GDP (Current USD),0.972,Cambodia
+PM25_Exposure,GDP (Current USD),-0.165,Cambodia
+Renewable_Energy_%,GDP (Current USD),-0.933,Cambodia
+GDP (Current USD),GDP (Current USD),1,Cambodia
+GDP per Capita (Current USD),GDP (Current USD),0.999,Cambodia
+CO2_Emissions_Total,GDP per Capita (Current USD),0.961,Cambodia
+GHG_Emissions_Total,GDP per Capita (Current USD),0.965,Cambodia
+PM25_Exposure,GDP per Capita (Current USD),-0.18,Cambodia
+Renewable_Energy_%,GDP per Capita (Current USD),-0.924,Cambodia
+GDP (Current USD),GDP per Capita (Current USD),0.999,Cambodia
+GDP per Capita (Current USD),GDP per Capita (Current USD),1,Cambodia
+CO2_Emissions_Total,CO2_Emissions_Total,1,Indonesia
+GHG_Emissions_Total,CO2_Emissions_Total,0.996,Indonesia
+PM25_Exposure,CO2_Emissions_Total,-0.397,Indonesia
+Renewable_Energy_%,CO2_Emissions_Total,-0.953,Indonesia
+GDP (Current USD),CO2_Emissions_Total,0.935,Indonesia
+GDP per Capita (Current USD),CO2_Emissions_Total,0.881,Indonesia
+CO2_Emissions_Total,GHG_Emissions_Total,0.996,Indonesia
+GHG_Emissions_Total,GHG_Emissions_Total,1,Indonesia
+PM25_Exposure,GHG_Emissions_Total,-0.417,Indonesia
+Renewable_Energy_%,GHG_Emissions_Total,-0.966,Indonesia
+GDP (Current USD),GHG_Emissions_Total,0.954,Indonesia
+GDP per Capita (Current USD),GHG_Emissions_Total,0.899,Indonesia
+CO2_Emissions_Total,PM25_Exposure,-0.397,Indonesia
+GHG_Emissions_Total,PM25_Exposure,-0.417,Indonesia
+PM25_Exposure,PM25_Exposure,1,Indonesia
+Renewable_Energy_%,PM25_Exposure,0.446,Indonesia
+GDP (Current USD),PM25_Exposure,-0.452,Indonesia
+GDP per Capita (Current USD),PM25_Exposure,-0.418,Indonesia
+CO2_Emissions_Total,Renewable_Energy_%,-0.953,Indonesia
+GHG_Emissions_Total,Renewable_Energy_%,-0.966,Indonesia
+PM25_Exposure,Renewable_Energy_%,0.446,Indonesia
+Renewable_Energy_%,Renewable_Energy_%,1,Indonesia
+GDP (Current USD),Renewable_Energy_%,-0.924,Indonesia
+GDP per Capita (Current USD),Renewable_Energy_%,-0.831,Indonesia
+CO2_Emissions_Total,GDP (Current USD),0.935,Indonesia
+GHG_Emissions_Total,GDP (Current USD),0.954,Indonesia
+PM25_Exposure,GDP (Current USD),-0.452,Indonesia
+Renewable_Energy_%,GDP (Current USD),-0.924,Indonesia
+GDP (Current USD),GDP (Current USD),1,Indonesia
+GDP per Capita (Current USD),GDP (Current USD),0.975,Indonesia
+CO2_Emissions_Total,GDP per Capita (Current USD),0.881,Indonesia
+GHG_Emissions_Total,GDP per Capita (Current USD),0.899,Indonesia
+PM25_Exposure,GDP per Capita (Current USD),-0.418,Indonesia
+Renewable_Energy_%,GDP per Capita (Current USD),-0.831,Indonesia
+GDP (Current USD),GDP per Capita (Current USD),0.975,Indonesia
+GDP per Capita (Current USD),GDP per Capita (Current USD),1,Indonesia
+CO2_Emissions_Total,CO2_Emissions_Total,1,Laos
+GHG_Emissions_Total,CO2_Emissions_Total,0.999,Laos
+PM25_Exposure,CO2_Emissions_Total,-0.344,Laos
+Renewable_Energy_%,CO2_Emissions_Total,-0.93,Laos
+GDP (Current USD),CO2_Emissions_Total,0.93,Laos
+GDP per Capita (Current USD),CO2_Emissions_Total,0.914,Laos
+CO2_Emissions_Total,GHG_Emissions_Total,0.999,Laos
+GHG_Emissions_Total,GHG_Emissions_Total,1,Laos
+PM25_Exposure,GHG_Emissions_Total,-0.338,Laos
+Renewable_Energy_%,GHG_Emissions_Total,-0.941,Laos
+GDP (Current USD),GHG_Emissions_Total,0.943,Laos
+GDP per Capita (Current USD),GHG_Emissions_Total,0.928,Laos
+CO2_Emissions_Total,PM25_Exposure,-0.344,Laos
+GHG_Emissions_Total,PM25_Exposure,-0.338,Laos
+PM25_Exposure,PM25_Exposure,1,Laos
+Renewable_Energy_%,PM25_Exposure,0.391,Laos
+GDP (Current USD),PM25_Exposure,-0.345,Laos
+GDP per Capita (Current USD),PM25_Exposure,-0.367,Laos
+CO2_Emissions_Total,Renewable_Energy_%,-0.93,Laos
+GHG_Emissions_Total,Renewable_Energy_%,-0.941,Laos
+PM25_Exposure,Renewable_Energy_%,0.391,Laos
+Renewable_Energy_%,Renewable_Energy_%,1,Laos
+GDP (Current USD),Renewable_Energy_%,-0.977,Laos
+GDP per Capita (Current USD),Renewable_Energy_%,-0.982,Laos
+CO2_Emissions_Total,GDP (Current USD),0.93,Laos
+GHG_Emissions_Total,GDP (Current USD),0.943,Laos
+PM25_Exposure,GDP (Current USD),-0.345,Laos
+Renewable_Energy_%,GDP (Current USD),-0.977,Laos
+GDP (Current USD),GDP (Current USD),1,Laos
+GDP per Capita (Current USD),GDP (Current USD),0.997,Laos
+CO2_Emissions_Total,GDP per Capita (Current USD),0.914,Laos
+GHG_Emissions_Total,GDP per Capita (Current USD),0.928,Laos
+PM25_Exposure,GDP per Capita (Current USD),-0.367,Laos
+Renewable_Energy_%,GDP per Capita (Current USD),-0.982,Laos
+GDP (Current USD),GDP per Capita (Current USD),0.997,Laos
+GDP per Capita (Current USD),GDP per Capita (Current USD),1,Laos
+CO2_Emissions_Total,CO2_Emissions_Total,1,Malaysia
+GHG_Emissions_Total,CO2_Emissions_Total,0.998,Malaysia
+PM25_Exposure,CO2_Emissions_Total,-0.19,Malaysia
+Renewable_Energy_%,CO2_Emissions_Total,0.722,Malaysia
+GDP (Current USD),CO2_Emissions_Total,0.715,Malaysia
+GDP per Capita (Current USD),CO2_Emissions_Total,0.343,Malaysia
+CO2_Emissions_Total,GHG_Emissions_Total,0.998,Malaysia
+GHG_Emissions_Total,GHG_Emissions_Total,1,Malaysia
+PM25_Exposure,GHG_Emissions_Total,-0.208,Malaysia
+Renewable_Energy_%,GHG_Emissions_Total,0.719,Malaysia
+GDP (Current USD),GHG_Emissions_Total,0.691,Malaysia
+GDP per Capita (Current USD),GHG_Emissions_Total,0.309,Malaysia
+CO2_Emissions_Total,PM25_Exposure,-0.19,Malaysia
+GHG_Emissions_Total,PM25_Exposure,-0.208,Malaysia
+PM25_Exposure,PM25_Exposure,1,Malaysia
+Renewable_Energy_%,PM25_Exposure,-0.475,Malaysia
+GDP (Current USD),PM25_Exposure,-0.002,Malaysia
+GDP per Capita (Current USD),PM25_Exposure,0.328,Malaysia
+CO2_Emissions_Total,Renewable_Energy_%,0.722,Malaysia
+GHG_Emissions_Total,Renewable_Energy_%,0.719,Malaysia
+PM25_Exposure,Renewable_Energy_%,-0.475,Malaysia
+Renewable_Energy_%,Renewable_Energy_%,1,Malaysia
+GDP (Current USD),Renewable_Energy_%,0.657,Malaysia
+GDP per Capita (Current USD),Renewable_Energy_%,0.138,Malaysia
+CO2_Emissions_Total,GDP (Current USD),0.715,Malaysia
+GHG_Emissions_Total,GDP (Current USD),0.691,Malaysia
+PM25_Exposure,GDP (Current USD),-0.002,Malaysia
+Renewable_Energy_%,GDP (Current USD),0.657,Malaysia
+GDP (Current USD),GDP (Current USD),1,Malaysia
+GDP per Capita (Current USD),GDP (Current USD),0.829,Malaysia
+CO2_Emissions_Total,GDP per Capita (Current USD),0.343,Malaysia
+GHG_Emissions_Total,GDP per Capita (Current USD),0.309,Malaysia
+PM25_Exposure,GDP per Capita (Current USD),0.328,Malaysia
+Renewable_Energy_%,GDP per Capita (Current USD),0.138,Malaysia
+GDP (Current USD),GDP per Capita (Current USD),0.829,Malaysia
+GDP per Capita (Current USD),GDP per Capita (Current USD),1,Malaysia
+CO2_Emissions_Total,CO2_Emissions_Total,1,Myanmar
+GHG_Emissions_Total,CO2_Emissions_Total,0.71,Myanmar
+PM25_Exposure,CO2_Emissions_Total,-0.33,Myanmar
+Renewable_Energy_%,CO2_Emissions_Total,-0.989,Myanmar
+GDP (Current USD),CO2_Emissions_Total,0.844,Myanmar
+GDP per Capita (Current USD),CO2_Emissions_Total,0.785,Myanmar
+CO2_Emissions_Total,GHG_Emissions_Total,0.71,Myanmar
+GHG_Emissions_Total,GHG_Emissions_Total,1,Myanmar
+PM25_Exposure,GHG_Emissions_Total,-0.622,Myanmar
+Renewable_Energy_%,GHG_Emissions_Total,-0.723,Myanmar
+GDP (Current USD),GHG_Emissions_Total,0.408,Myanmar
+GDP per Capita (Current USD),GHG_Emissions_Total,0.344,Myanmar
+CO2_Emissions_Total,PM25_Exposure,-0.33,Myanmar
+GHG_Emissions_Total,PM25_Exposure,-0.622,Myanmar
+PM25_Exposure,PM25_Exposure,1,Myanmar
+Renewable_Energy_%,PM25_Exposure,0.321,Myanmar
+GDP (Current USD),PM25_Exposure,-0.203,Myanmar
+GDP per Capita (Current USD),PM25_Exposure,-0.192,Myanmar
+CO2_Emissions_Total,Renewable_Energy_%,-0.989,Myanmar
+GHG_Emissions_Total,Renewable_Energy_%,-0.723,Myanmar
+PM25_Exposure,Renewable_Energy_%,0.321,Myanmar
+Renewable_Energy_%,Renewable_Energy_%,1,Myanmar
+GDP (Current USD),Renewable_Energy_%,-0.842,Myanmar
+GDP per Capita (Current USD),Renewable_Energy_%,-0.784,Myanmar
+CO2_Emissions_Total,GDP (Current USD),0.844,Myanmar
+GHG_Emissions_Total,GDP (Current USD),0.408,Myanmar
+PM25_Exposure,GDP (Current USD),-0.203,Myanmar
+Renewable_Energy_%,GDP (Current USD),-0.842,Myanmar
+GDP (Current USD),GDP (Current USD),1,Myanmar
+GDP per Capita (Current USD),GDP (Current USD),0.994,Myanmar
+CO2_Emissions_Total,GDP per Capita (Current USD),0.785,Myanmar
+GHG_Emissions_Total,GDP per Capita (Current USD),0.344,Myanmar
+PM25_Exposure,GDP per Capita (Current USD),-0.192,Myanmar
+Renewable_Energy_%,GDP per Capita (Current USD),-0.784,Myanmar
+GDP (Current USD),GDP per Capita (Current USD),0.994,Myanmar
+GDP per Capita (Current USD),GDP per Capita (Current USD),1,Myanmar
+CO2_Emissions_Total,CO2_Emissions_Total,1,Philippines
+GHG_Emissions_Total,CO2_Emissions_Total,0.999,Philippines
+PM25_Exposure,CO2_Emissions_Total,-0.469,Philippines
+Renewable_Energy_%,CO2_Emissions_Total,-0.964,Philippines
+GDP (Current USD),CO2_Emissions_Total,0.953,Philippines
+GDP per Capita (Current USD),CO2_Emissions_Total,0.933,Philippines
+CO2_Emissions_Total,GHG_Emissions_Total,0.999,Philippines
+GHG_Emissions_Total,GHG_Emissions_Total,1,Philippines
+PM25_Exposure,GHG_Emissions_Total,-0.472,Philippines
+Renewable_Energy_%,GHG_Emissions_Total,-0.958,Philippines
+GDP (Current USD),GHG_Emissions_Total,0.955,Philippines
+GDP per Capita (Current USD),GHG_Emissions_Total,0.934,Philippines
+CO2_Emissions_Total,PM25_Exposure,-0.469,Philippines
+GHG_Emissions_Total,PM25_Exposure,-0.472,Philippines
+PM25_Exposure,PM25_Exposure,1,Philippines
+Renewable_Energy_%,PM25_Exposure,0.476,Philippines
+GDP (Current USD),PM25_Exposure,-0.438,Philippines
+GDP per Capita (Current USD),PM25_Exposure,-0.428,Philippines
+CO2_Emissions_Total,Renewable_Energy_%,-0.964,Philippines
+GHG_Emissions_Total,Renewable_Energy_%,-0.958,Philippines
+PM25_Exposure,Renewable_Energy_%,0.476,Philippines
+Renewable_Energy_%,Renewable_Energy_%,1,Philippines
+GDP (Current USD),Renewable_Energy_%,-0.856,Philippines
+GDP per Capita (Current USD),Renewable_Energy_%,-0.83,Philippines
+CO2_Emissions_Total,GDP (Current USD),0.953,Philippines
+GHG_Emissions_Total,GDP (Current USD),0.955,Philippines
+PM25_Exposure,GDP (Current USD),-0.438,Philippines
+Renewable_Energy_%,GDP (Current USD),-0.856,Philippines
+GDP (Current USD),GDP (Current USD),1,Philippines
+GDP per Capita (Current USD),GDP (Current USD),0.996,Philippines
+CO2_Emissions_Total,GDP per Capita (Current USD),0.933,Philippines
+GHG_Emissions_Total,GDP per Capita (Current USD),0.934,Philippines
+PM25_Exposure,GDP per Capita (Current USD),-0.428,Philippines
+Renewable_Energy_%,GDP per Capita (Current USD),-0.83,Philippines
+GDP (Current USD),GDP per Capita (Current USD),0.996,Philippines
+GDP per Capita (Current USD),GDP per Capita (Current USD),1,Philippines
+CO2_Emissions_Total,CO2_Emissions_Total,1,Singapore
+GHG_Emissions_Total,CO2_Emissions_Total,0.941,Singapore
+PM25_Exposure,CO2_Emissions_Total,0.341,Singapore
+Renewable_Energy_%,CO2_Emissions_Total,0.73,Singapore
+GDP (Current USD),CO2_Emissions_Total,0.8,Singapore
+GDP per Capita (Current USD),CO2_Emissions_Total,0.757,Singapore
+CO2_Emissions_Total,GHG_Emissions_Total,0.941,Singapore
+GHG_Emissions_Total,GHG_Emissions_Total,1,Singapore
+PM25_Exposure,GHG_Emissions_Total,0.091,Singapore
+Renewable_Energy_%,GHG_Emissions_Total,0.903,Singapore
+GDP (Current USD),GHG_Emissions_Total,0.89,Singapore
+GDP per Capita (Current USD),GHG_Emissions_Total,0.843,Singapore
+CO2_Emissions_Total,PM25_Exposure,0.341,Singapore
+GHG_Emissions_Total,PM25_Exposure,0.091,Singapore
+PM25_Exposure,PM25_Exposure,1,Singapore
+Renewable_Energy_%,PM25_Exposure,-0.072,Singapore
+GDP (Current USD),PM25_Exposure,0.228,Singapore
+GDP per Capita (Current USD),PM25_Exposure,0.253,Singapore
+CO2_Emissions_Total,Renewable_Energy_%,0.73,Singapore
+GHG_Emissions_Total,Renewable_Energy_%,0.903,Singapore
+PM25_Exposure,Renewable_Energy_%,-0.072,Singapore
+Renewable_Energy_%,Renewable_Energy_%,1,Singapore
+GDP (Current USD),Renewable_Energy_%,0.875,Singapore
+GDP per Capita (Current USD),Renewable_Energy_%,0.822,Singapore
+CO2_Emissions_Total,GDP (Current USD),0.8,Singapore
+GHG_Emissions_Total,GDP (Current USD),0.89,Singapore
+PM25_Exposure,GDP (Current USD),0.228,Singapore
+Renewable_Energy_%,GDP (Current USD),0.875,Singapore
+GDP (Current USD),GDP (Current USD),1,Singapore
+GDP per Capita (Current USD),GDP (Current USD),0.991,Singapore
+CO2_Emissions_Total,GDP per Capita (Current USD),0.757,Singapore
+GHG_Emissions_Total,GDP per Capita (Current USD),0.843,Singapore
+PM25_Exposure,GDP per Capita (Current USD),0.253,Singapore
+Renewable_Energy_%,GDP per Capita (Current USD),0.822,Singapore
+GDP (Current USD),GDP per Capita (Current USD),0.991,Singapore
+GDP per Capita (Current USD),GDP per Capita (Current USD),1,Singapore
+CO2_Emissions_Total,CO2_Emissions_Total,1,Thailand
+GHG_Emissions_Total,CO2_Emissions_Total,0.943,Thailand
+PM25_Exposure,CO2_Emissions_Total,-0.254,Thailand
+Renewable_Energy_%,CO2_Emissions_Total,-0.001,Thailand
+GDP (Current USD),CO2_Emissions_Total,0.719,Thailand
+GDP per Capita (Current USD),CO2_Emissions_Total,0.702,Thailand
+CO2_Emissions_Total,GHG_Emissions_Total,0.943,Thailand
+GHG_Emissions_Total,GHG_Emissions_Total,1,Thailand
+PM25_Exposure,GHG_Emissions_Total,-0.048,Thailand
+Renewable_Energy_%,GHG_Emissions_Total,-0.059,Thailand
+GDP (Current USD),GHG_Emissions_Total,0.737,Thailand
+GDP per Capita (Current USD),GHG_Emissions_Total,0.728,Thailand
+CO2_Emissions_Total,PM25_Exposure,-0.254,Thailand
+GHG_Emissions_Total,PM25_Exposure,-0.048,Thailand
+PM25_Exposure,PM25_Exposure,1,Thailand
+Renewable_Energy_%,PM25_Exposure,0.112,Thailand
+GDP (Current USD),PM25_Exposure,-0.208,Thailand
+GDP per Capita (Current USD),PM25_Exposure,-0.185,Thailand
+CO2_Emissions_Total,Renewable_Energy_%,-0.001,Thailand
+GHG_Emissions_Total,Renewable_Energy_%,-0.059,Thailand
+PM25_Exposure,Renewable_Energy_%,0.112,Thailand
+Renewable_Energy_%,Renewable_Energy_%,1,Thailand
+GDP (Current USD),Renewable_Energy_%,-0.043,Thailand
+GDP per Capita (Current USD),Renewable_Energy_%,-0.02,Thailand
+CO2_Emissions_Total,GDP (Current USD),0.719,Thailand
+GHG_Emissions_Total,GDP (Current USD),0.737,Thailand
+PM25_Exposure,GDP (Current USD),-0.208,Thailand
+Renewable_Energy_%,GDP (Current USD),-0.043,Thailand
+GDP (Current USD),GDP (Current USD),1,Thailand
+GDP per Capita (Current USD),GDP (Current USD),0.999,Thailand
+CO2_Emissions_Total,GDP per Capita (Current USD),0.702,Thailand
+GHG_Emissions_Total,GDP per Capita (Current USD),0.728,Thailand
+PM25_Exposure,GDP per Capita (Current USD),-0.185,Thailand
+Renewable_Energy_%,GDP per Capita (Current USD),-0.02,Thailand
+GDP (Current USD),GDP per Capita (Current USD),0.999,Thailand
+GDP per Capita (Current USD),GDP per Capita (Current USD),1,Thailand
+CO2_Emissions_Total,CO2_Emissions_Total,1,VietNam
+GHG_Emissions_Total,CO2_Emissions_Total,1,VietNam
+PM25_Exposure,CO2_Emissions_Total,-0.322,VietNam
+Renewable_Energy_%,CO2_Emissions_Total,-0.952,VietNam
+GDP (Current USD),CO2_Emissions_Total,0.946,VietNam
+GDP per Capita (Current USD),CO2_Emissions_Total,0.936,VietNam
+CO2_Emissions_Total,GHG_Emissions_Total,1,VietNam
+GHG_Emissions_Total,GHG_Emissions_Total,1,VietNam
+PM25_Exposure,GHG_Emissions_Total,-0.327,VietNam
+Renewable_Energy_%,GHG_Emissions_Total,-0.951,VietNam
+GDP (Current USD),GHG_Emissions_Total,0.95,VietNam
+GDP per Capita (Current USD),GHG_Emissions_Total,0.941,VietNam
+CO2_Emissions_Total,PM25_Exposure,-0.322,VietNam
+GHG_Emissions_Total,PM25_Exposure,-0.327,VietNam
+PM25_Exposure,PM25_Exposure,1,VietNam
+Renewable_Energy_%,PM25_Exposure,0.423,VietNam
+GDP (Current USD),PM25_Exposure,-0.468,VietNam
+GDP per Capita (Current USD),PM25_Exposure,-0.473,VietNam
+CO2_Emissions_Total,Renewable_Energy_%,-0.952,VietNam
+GHG_Emissions_Total,Renewable_Energy_%,-0.951,VietNam
+PM25_Exposure,Renewable_Energy_%,0.423,VietNam
+Renewable_Energy_%,Renewable_Energy_%,1,VietNam
+GDP (Current USD),Renewable_Energy_%,-0.89,VietNam
+GDP per Capita (Current USD),Renewable_Energy_%,-0.877,VietNam
+CO2_Emissions_Total,GDP (Current USD),0.946,VietNam
+GHG_Emissions_Total,GDP (Current USD),0.95,VietNam
+PM25_Exposure,GDP (Current USD),-0.468,VietNam
+Renewable_Energy_%,GDP (Current USD),-0.89,VietNam
+GDP (Current USD),GDP (Current USD),1,VietNam
+GDP per Capita (Current USD),GDP (Current USD),0.999,VietNam
+CO2_Emissions_Total,GDP per Capita (Current USD),0.936,VietNam
+GHG_Emissions_Total,GDP per Capita (Current USD),0.941,VietNam
+PM25_Exposure,GDP per Capita (Current USD),-0.473,VietNam
+Renewable_Energy_%,GDP per Capita (Current USD),-0.877,VietNam
+GDP (Current USD),GDP per Capita (Current USD),0.999,VietNam
+GDP per Capita (Current USD),GDP per Capita (Current USD),1,VietNam
