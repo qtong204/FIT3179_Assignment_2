@@ -47,9 +47,6 @@
 </header>
 
 <section>
-  <h2>Rainfall and Humidity Trends by State (2000–2021)</h2>
-  <div id="rainfall-line" class="chart"></div>
-
   <h2>ASEAN Environmental Indicators Map (2005–2020)</h2>
   <div id="asean-env-map" class="chart"></div>
 
@@ -65,7 +62,6 @@
 
 <script>
 const specs = {
-  "rainfall-line": "https://raw.githubusercontent.com/qtong204/FIT3179_Assignment_2/refs/heads/main/specs/rainfall_line.json",
   "asean-env-map": "https://raw.githubusercontent.com/qtong204/FIT3179_Assignment_2/refs/heads/main/specs/asean_env_map.json",
   "asean-bubble": "https://raw.githubusercontent.com/qtong204/FIT3179_Assignment_2/refs/heads/main/specs/asean_bubble.json",
   "gdp-co2-line": "https://raw.githubusercontent.com/qtong204/FIT3179_Assignment_2/refs/heads/main/specs/gdp_co2_line.json",
@@ -80,3 +76,4 @@ for (const [id, url] of Object.entries(specs)) {
 
 </body>
 </html>
+
