@@ -39,7 +39,7 @@
     }
   ],
   "data": {
-    "url": "https://raw.githubusercontent.com/qtong204/FIT3179_Assignment_2/refs/heads/main/Greenhouse_gases_emission_between_selected%20countries.csv",
+    "url": "https://raw.githubusercontent.com/qtong204/FIT3179_Assignment_2/refs/heads/main/ASEAN_economy_climate.csv",
     "format": {"type": "csv"}
   },
   "transform": [
