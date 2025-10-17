@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Interactive line chart for rainfall or humidity by state and year (multi-select via legend)",
+  "width": 700,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/qtong204/FIT3179_Assignment_2/refs/heads/main/aggregated_rainfall_by_state.csv"
+  },
+  "params": [
+    {
+      "name": "selectedMetric",
+      "value": "Avg_Rainfall",
+      "bind": {
+        "input": "select",
+        "options": ["Avg_Rainfall", "Avg_Humidity"],
+        "labels": ["Average Rainfall (mm)", "Average Humidity (%)"],
+        "name": "Select Metric: "
+      }
+    },
+    {
+      "name": "stateSelection",
+      "select": { "type": "point", "fields": ["State"] },
+      "bind": "legend"
+    }
+  ],
+  "transform": [
+    {
+      "calculate": "selectedMetric == 'Avg_Rainfall' ? datum.Avg_Rainfall : datum.Avg_Humidity",
+      "as": "SelectedValue"
+    }
+  ],
+  "mark": { "type": "line", "point": true },
+  "encoding": {
+    "x": { "field": "Year", "type": "ordinal", "title": "Year" },
+    "y": {
+      "field": "SelectedValue",
+      "type": "quantitative",
+      "title": {
+        "expr": "selectedMetric == 'Avg_Rainfall' ? 'Average Rainfall (mm)' : 'Average Humidity (%)'"
+      }
+    },
+    "color": { "field": "State", "type": "nominal", "title": "State" },
+    "opacity": {
+      "condition": { "param": "stateSelection", "value": 1 },
+      "value": 0.15
+    },
+    "tooltip": [
+      { "field": "State", "title": "State" },
+      { "field": "Year", "title": "Year" },
+      { "field": "Avg_Rainfall", "title": "Avg Rainfall (mm)" },
+      { "field": "Avg_Humidity", "title": "Avg Humidity (%)" }
+    ]
+  },
+  "config": {
+    "background": "white",
+    "view": { "stroke": "transparent" },
+    "axis": { "labelFontSize": 12, "titleFontSize": 14 }
+  }
+}
+
+
