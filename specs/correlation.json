@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 400,
+  "title": "Correlation Matrix by Country (2010–2020)",
+  "params": [
+    {
+      "name": "selectedCountry",
+      "value": "Malaysia",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Brunei",
+          "Cambodia",
+          "Indonesia",
+          "Laos",
+          "Malaysia",
+          "Myanmar",
+          "Philippines",
+          "Singapore",
+          "Thailand",
+          "VietNam"
+        ],
+        "name": "Select Country: "
+      }
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/qtong204/FIT3179_Assignment_2/refs/heads/main/ASEAN_CountryLevel_Correlations_2010_2020.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"filter": "datum.Country == selectedCountry"}
+  ],
+  "mark": "rect",
+  "encoding": {
+    "x": {
+      "field": "Var1",
+      "type": "nominal",
+      "title": "Variable 1",
+      "sort": "ascending"
+    },
+    "y": {
+      "field": "Var2",
+      "type": "nominal",
+      "title": "Variable 2",
+      "sort": "ascending"
+    },
+    "color": {
+      "field": "Correlation",
+      "type": "quantitative",
+      "title": "Correlation",
+      "scale": {"domain": [-1, 1], "scheme": "redblue"}
+    },
+    "tooltip": [
+      {"field": "Var1", "title": "Variable 1"},
+      {"field": "Var2", "title": "Variable 2"},
+      {"field": "Correlation", "format": ".2f"}
+    ]
+  },
+  "config": {
+    "background": "white",
+    "axis": {"labelFontSize": 12, "titleFontSize": 14},
+    "title": {"fontSize": 18, "fontWeight": "bold"}
+  }
+}
+
+
+
+
+
