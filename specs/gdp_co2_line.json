@@ -1,0 +1,102 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 400,
+  "title": "GDP vs CO₂ Emissions Over Time (2010–2020)",
+  "params": [
+    {
+      "name": "selectedCountry",
+      "value": "Malaysia",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Brunei",
+          "Cambodia",
+          "Indonesia",
+          "Laos",
+          "Malaysia",
+          "Myanmar",
+          "Philippines",
+          "Singapore",
+          "Thailand",
+          "VietNam"
+        ],
+        "name": "Select Country: "
+      }
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/qtong204/FIT3179_Assignment_2/refs/heads/main/ASEAN_economy_climate.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"filter": "datum.Country == selectedCountry"}
+  ],
+  "layer": [
+    {
+      "layer": [
+        {
+          "mark": {"type": "line", "strokeWidth": 3, "color": "#d62728"},
+          "encoding": {
+            "x": {
+              "field": "Year",
+              "type": "ordinal",
+              "title": "Year",
+              "axis": {"labelAngle": 0}
+            },
+            "y": {
+              "field": "CO2_Emissions_Total",
+              "type": "quantitative",
+              "title": "CO₂ Emissions (Mt)",
+              "axis": {"titleColor": "#d62728"}
+            }
+          }
+        },
+        {
+          "mark": {"type": "point", "filled": true, "size": 80, "color": "#d62728"},
+          "encoding": {
+            "x": {"field": "Year", "type": "ordinal"},
+            "y": {"field": "CO2_Emissions_Total", "type": "quantitative"},
+            "tooltip": [
+              {"field": "Year", "type": "ordinal"},
+              {"field": "CO2_Emissions_Total", "title": "CO₂ Emissions (Mt)", "format": ".2f"}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "layer": [
+        {
+          "mark": {"type": "line", "strokeWidth": 3, "color": "#1f77b4"},
+          "encoding": {
+            "x": {"field": "Year", "type": "ordinal"},
+            "y": {
+              "field": "GDP (Current USD)",
+              "type": "quantitative",
+              "title": "GDP (Current USD, Log Scale)",
+              "axis": {"orient": "right", "titleColor": "#1f77b4"}
+            }
+          }
+        },
+        {
+          "mark": {"type": "point", "filled": true, "size": 80, "color": "#1f77b4"},
+          "encoding": {
+            "x": {"field": "Year", "type": "ordinal"},
+            "y": {"field": "GDP (Current USD)", "type": "quantitative"},
+            "tooltip": [
+              {"field": "Year", "type": "ordinal"},
+              {"field": "GDP (Current USD)", "title": "GDP (USD)", "format": ".2s"}
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "resolve": {"scale": {"y": "independent"}},
+  "config": {
+    "background": "white",
+    "axis": {"labelFontSize": 12, "titleFontSize": 14},
+    "title": {"fontSize": 18, "fontWeight": "bold"}
+  }
+}
