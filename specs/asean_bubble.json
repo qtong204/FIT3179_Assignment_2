@@ -1,0 +1,76 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": 900,
+  "height": 600,
+  "title": "ASEAN: GDP vs CO₂ Emissions (2010–2020)",
+  "data": {
+    "url": "https://raw.githubusercontent.com/qtong204/FIT3179_Assignment_2/refs/heads/main/ASEAN_economy_climate.csv",
+    "format": {"type": "csv"}
+  },
+  "params": [
+    {
+      "name": "selectedYear",
+      "value": 2020,
+      "bind": {
+        "input": "select",
+        "options": [
+          2010,
+          2011,2012,2013,2014,2015,2016,
+          2017,2018,2019,2020
+        ],
+        "name": "Select Year: "
+      }
+    }
+  ],
+  "transform": [
+    {"calculate": "toNumber(datum.Year)", "as": "Year"},
+    {"filter": "datum.Year == selectedYear"}
+  ],
+  "mark": {"type": "circle", "opacity": 0.8, "stroke": "black", "strokeWidth": 0.5},
+  "encoding": {
+    "x": {
+  "field": "GDP per Capita (Current USD)",
+  "type": "quantitative",
+  "title": "GDP per Capita (USD)",
+  "axis": {
+    "grid": true,
+    "tickCount": 6
+  }
+},
+"y": {
+  "field": "CO2_Emissions_Total",
+  "type": "quantitative",
+  "title": "CO₂ Emissions (Mt)",
+  "axis": {
+    "grid": true,
+    "tickCount": 6
+  }
+},
+    "size": {
+      "field": "Renewable_Energy_%",
+      "type": "quantitative",
+      "title": "Renewable Energy (%)",
+      "scale": {"range": [100, 2000]}
+    },
+    "color": {
+      "field": "PM25_Exposure",
+      "type": "quantitative",
+      "title": "PM₂.₅ Exposure (µg/m³)",
+      "scale": {"scheme": "reds"}
+    },
+    "tooltip": [
+      {"field": "Country", "title": "Country"},
+      {"field": "Year", "title": "Year"},
+      {"field": "GDP (Current USD)", "title": "GDP (USD)", "format": ",.0f"},
+      {"field": "GDP per Capita (Current USD)", "title": "GDP per Capita (USD)", "format": ",.0f"},
+      {"field": "CO2_Emissions_Total", "title": "CO₂ Emissions (Mt)", "format": ".2f"},
+      {"field": "PM25_Exposure", "title": "PM₂.₅ Exposure (µg/m³)", "format": ".2f"},
+      {"field": "Renewable_Energy_%", "title": "Renewable Energy (%)", "format": ".1f"}
+    ]
+  },
+  "config": {
+    "background": "white",
+    "axis": {"labelFontSize": 12, "titleFontSize": 14},
+    "legend": {"labelFontSize": 12, "titleFontSize": 13, "titleFontWeight": "bold"}
+  }
+}
