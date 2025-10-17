@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ASEAN Climate and Economy Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  <style>
+    body {
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      margin: 0;
+      background: #fafafa;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #005fa3;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #222;
+    }
+    .chart {
+      margin: 1.5rem auto;
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🌏 ASEAN Climate & Economic Indicators Dashboard</h1>
+  <p>Interactive Vega-Lite visualizations exploring Malaysia’s climate and ASEAN environmental data (2000–2020)</p>
+</header>
+
+<section>
+  <h2>Rainfall and Humidity Trends by State (2000–2021)</h2>
+  <div id="rainfall-line" class="chart"></div>
+
+  <h2>ASEAN Environmental Indicators Map (2005–2020)</h2>
+  <div id="asean-env-map" class="chart"></div>
+
+  <h2>ASEAN: GDP vs CO₂ Emissions (2010–2020)</h2>
+  <div id="asean-bubble" class="chart"></div>
+
+  <h2>GDP & CO₂ Emissions Over Time by Country</h2>
+  <div id="gdp-co2-line" class="chart"></div>
+
+  <h2>Correlation Matrix by Country (2010–2020)</h2>
+  <div id="correlation" class="chart"></div>
+</section>
+
+<script>
+const specs = {
+  "rainfall-line": "https://raw.githubusercontent.com/qtong204/FIT3179_Assignment_2/refs/heads/main/specs/rainfall_line.json",
+  "asean-env-map": "https://raw.githubusercontent.com/qtong204/FIT3179_Assignment_2/refs/heads/main/specs/asean_env_map.json",
+  "asean-bubble": "https://raw.githubusercontent.com/qtong204/FIT3179_Assignment_2/refs/heads/main/specs/asean_bubble.json",
+  "gdp-co2-line": "https://raw.githubusercontent.com/qtong204/FIT3179_Assignment_2/refs/heads/main/specs/gdp_co2_line.json",
+  "correlation": "https://raw.githubusercontent.com/qtong204/FIT3179_Assignment_2/refs/heads/main/specs/correlation.json"
+};
+
+// Embed each visualization (you can also inline your JSON directly instead of URLs)
+for (const [id, url] of Object.entries(specs)) {
+  vegaEmbed(`#${id}`, url, { actions: false }).catch(console.error);
+}
+</script>
+
+</body>
+</html>
