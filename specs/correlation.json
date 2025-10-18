@@ -36,12 +36,14 @@
   "encoding": {
     "x": {
       "field": "Var1",
-      "type": "nominal"
+      "type": "nominal",
+      "title": "",
       "sort": "ascending"
     },
     "y": {
       "field": "Var2",
-      "type": "nominal"
+      "type": "nominal",
+      "title": "",
       "sort": "ascending"
     },
     "color": {
@@ -51,6 +53,8 @@
       "scale": {"domain": [-1, 1], "scheme": "redblue"}
     },
     "tooltip": [
+      {"field": "Var1", "title": "Variable 1"},
+      {"field": "Var2", "title": "Variable 2"},
       {"field": "Correlation", "format": ".2f"}
     ]
   },
@@ -60,7 +64,6 @@
     "title": {"fontSize": 18, "fontWeight": "bold"}
   }
 }
-
 
 
 
