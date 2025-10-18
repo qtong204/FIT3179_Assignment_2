@@ -36,14 +36,12 @@
   "encoding": {
     "x": {
       "field": "Var1",
-      "type": "nominal",
-      "title": "Variable 1",
+      "type": "nominal"
       "sort": "ascending"
     },
     "y": {
       "field": "Var2",
-      "type": "nominal",
-      "title": "Variable 2",
+      "type": "nominal"
       "sort": "ascending"
     },
     "color": {
@@ -53,8 +51,6 @@
       "scale": {"domain": [-1, 1], "scheme": "redblue"}
     },
     "tooltip": [
-      {"field": "Var1", "title": "Variable 1"},
-      {"field": "Var2", "title": "Variable 2"},
       {"field": "Correlation", "format": ".2f"}
     ]
   },
