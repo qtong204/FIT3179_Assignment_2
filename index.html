@@ -6,59 +6,384 @@
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    body {
-      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    * {
+      box-sizing: border-box;
       margin: 0;
-      background: #fafafa;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+      background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
       color: #333;
       line-height: 1.6;
+      min-height: 100vh;a
     }
+
     header {
+      background: linear-gradient(135deg, #005fa3 0%, #0083cc 100%);
+      color: white;
+      padding: 2.5rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: 0 auto;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 1600px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .dashboard-section {
+      margin-bottom: 3rem;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #005fa3;
+      font-size: 1.8rem;
+      position: relative;
+      padding-bottom: 0.5rem;
+    }
+
+    .section-title::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background: linear-gradient(90deg, #005fa3, #4cb2ff);
+      border-radius: 3px;
+    }
+
+    .visualization-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .chart-container {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      padding: 1.5rem;
+      min-height: 500px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .chart-title {
+      color: #005fa3;
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+      text-align: center;
+    }
+
+    .chart-wrapper {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .description-container {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      padding: 1.5rem;
+    }
+
+    .description-content h3 {
+      color: #005fa3;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .description-content h3 i {
+      color: #4cb2ff;
+    }
+
+    .description-content p {
+      margin-bottom: 1.2rem;
+      line-height: 1.7;
+    }
+
+    .key-insights {
+      background: #e8f4ff;
+      padding: 1.2rem;
+      border-radius: 8px;
+      margin-top: 1.5rem;
+      border-left: 4px solid #4cb2ff;
+    }
+
+    .key-insights h4 {
+      color: #005fa3;
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .key-insights ul {
+      padding-left: 1.2rem;
+    }
+
+    .key-insights li {
+      margin-bottom: 0.5rem;
+    }
+
+    .legend {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    .legend-color {
+      width: 16px;
+      height: 16px;
+      border-radius: 3px;
+    }
+
+    footer {
       background: #005fa3;
       color: white;
-      padding: 2rem 1rem;
       text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
     }
-    section {
-      padding: 2rem;
-      max-width: 1200px;
-      margin: auto;
+
+    @media (max-width: 1100px) {
+      .visualization-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .chart-container {
+        min-height: 450px;
+      }
     }
-    h2 {
-      text-align: center;
-      margin-bottom: 1rem;
-      color: #222;
-    }
-    .chart {
-      margin: 1.5rem auto;
-      background: white;
-      padding: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      
+      header p {
+        font-size: 1rem;
+      }
+      
+      .section-title {
+        font-size: 1.5rem;
+      }
+      
+      .container {
+        padding: 1rem;
+      }
+      
+      .chart-container {
+        padding: 1rem;
+        min-height: 400px;
+      }
     }
   </style>
 </head>
+
 <body>
 
 <header>
-  <h1>🌏 ASEAN Climate & Economic Indicators Dashboard</h1>
-  <p>Interactive Vega-Lite visualizations exploring Malaysia’s climate and ASEAN environmental data (2000–2020)</p>
+  <h1><i class="fas fa-globe-asia"></i> ASEAN Climate & Economic Indicators Dashboard</h1>
+  <p>Interactive visualizations exploring environmental and economic trends across ASEAN nations (2000–2020)</p>
 </header>
 
-<section>
-  <h2>ASEAN Environmental Indicators Map (2005–2020)</h2>
-  <div id="asean-env-map" class="chart"></div>
+<div class="container">
+  <!-- Environmental Map Section -->
+  <section class="dashboard-section">
+    <h2 class="section-title">ASEAN Environmental Indicators Map (2005–2020)</h2>
+    <div class="visualization-container">
+      <div class="chart-container">
+        <h3 class="chart-title">Environmental Indicators by Country</h3>
+        <div class="chart-wrapper">
+          <div id="asean-env-map" style="width: 100%; height: 100%;"></div>
+        </div>
+      </div>
+      <div class="description-container">
+        <div class="description-content">
+          <h3><i class="fas fa-map-marked-alt"></i> Regional Environmental Overview</h3>
+          <p>
+            This choropleth map visualizes key environmental indicators across ASEAN nations between 2005 and 2020. 
+            Use the selector to toggle between different metrics including CO₂ emissions, renewable energy adoption, 
+            and air quality measurements.
+          </p>
+          <p>
+            The color intensity represents the magnitude of each indicator, with darker shades indicating higher values. 
+            This spatial representation helps identify regional patterns and disparities in environmental performance.
+          </p>
+          <div class="key-insights">
+            <h4><i class="fas fa-lightbulb"></i> Key Insights</h4>
+            <ul>
+              <li>Singapore shows consistently high CO₂ emissions per capita</li>
+              <li>Laos and Cambodia have made significant renewable energy progress</li>
+              <li>Urban centers generally exhibit higher PM2.5 exposure levels</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <h2>ASEAN: GDP vs CO₂ Emissions (2010–2020)</h2>
-  <div id="asean-bubble" class="chart"></div>
+  <!-- GDP vs CO₂ Section -->
+  <section class="dashboard-section">
+    <h2 class="section-title">ASEAN: GDP vs CO₂ Emissions (2010–2020)</h2>
+    <div class="visualization-container">
+      <div class="chart-container">
+        <h3 class="chart-title">Economic Growth vs Carbon Emissions</h3>
+        <div class="chart-wrapper">
+          <div id="asean-bubble" style="width: 100%; height: 80%;"></div>
+        </div>
+      </div>
+      <div class="description-container">
+        <div class="description-content">
+          <h3><i class="fas fa-chart-line"></i> Economic-Environmental Relationship</h3>
+          <p>
+            This bubble chart explores the correlation between economic output (GDP) and carbon emissions 
+            across ASEAN countries from 2010 to 2020. Each bubble represents a country, with size indicating 
+            population and color distinguishing different nations.
+          </p>
+          <p>
+            The general upward trend suggests that economic growth has historically been coupled with increased 
+            emissions. However, some nations are beginning to show signs of decoupling as they transition to 
+            cleaner energy sources.
+          </p>
+          <div class="key-insights">
+            <h4><i class="fas fa-lightbulb"></i> Key Insights</h4>
+            <ul>
+              <li>Indonesia and Thailand show the strongest correlation between GDP growth and emissions</li>
+              <li>Vietnam demonstrates rapid economic growth with moderate emission increases</li>
+              <li>Singapore achieves high GDP with relatively lower emission intensity</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <h2>GDP & CO₂ Emissions Over Time by Country</h2>
-  <div id="gdp-co2-line" class="chart"></div>
+  <!-- Trends Over Time Section -->
+  <section class="dashboard-section">
+    <h2 class="section-title">GDP & CO₂ Emissions Over Time by Country</h2>
+    <div class="visualization-container">
+      <div class="chart-container">
+        <h3 class="chart-title">Longitudinal Trends Analysis</h3>
+        <div class="chart-wrapper">
+          <div id="gdp-co2-line" style="width: 100%; height: 90%;"></div>
+        </div>
+      </div>
+      <div class="description-container">
+        <div class="description-content">
+          <h3><i class="fas fa-chart-area"></i> Longitudinal Trends Analysis</h3>
+          <p>
+            This dual-axis line chart tracks the evolution of both GDP and CO₂ emissions for each ASEAN country 
+            over time. The parallel visualization allows for direct comparison of economic and environmental trends.
+          </p>
+          <p>
+            When both metrics rise in tandem, it suggests carbon-intensive development. Diverging trends may 
+            indicate efficiency improvements or transitions to cleaner energy sources. Select different countries 
+            from the dropdown to examine national trajectories.
+          </p>
+          <div class="key-insights">
+            <h4><i class="fas fa-lightbulb"></i> Key Insights</h4>
+            <ul>
+              <li>Malaysia shows consistent parallel growth in both GDP and emissions</li>
+              <li>The Philippines demonstrates periods of economic growth with stable emissions</li>
+              <li>Most countries experienced a temporary dip in both metrics during 2020</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <h2>Correlation Matrix by Country (2010–2020)</h2>
-  <div id="correlation" class="chart"></div>
-</section>
+  <!-- Correlation Matrix Section -->
+  <section class="dashboard-section">
+    <h2 class="section-title">Correlation Matrix by Country (2010–2020)</h2>
+    <div class="visualization-container">
+      <div class="chart-container">
+        <h3 class="chart-title">Multivariate Relationships</h3>
+        <div class="chart-wrapper">
+          <div id="correlation" style="width: 100%; height: 100%;"></div>
+        </div>
+      </div>
+      <div class="description-container">
+        <div class="description-content">
+          <h3><i class="fas fa-project-diagram"></i> Multivariate Relationships</h3>
+          <p>
+            This correlation matrix reveals relationships between key economic and environmental indicators 
+            for each ASEAN country. Warm colors (orange/red) indicate positive correlations, while cool colors 
+            (blue) represent inverse relationships.
+          </p>
+          <p>
+            Strong positive correlations between GDP and emissions suggest carbon-dependent economies, while 
+            negative correlations between renewable energy and emissions highlight decarbonization progress. 
+            Use the country selector to compare different national profiles.
+          </p>
+          <div class="legend">
+            <div class="legend-item">
+              <div class="legend-color" style="background: #d73027;"></div>
+              <span>Strong Positive Correlation</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-color" style="background: #f7f7f7; border: 1px solid #ddd;"></div>
+              <span>Weak or No Correlation</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-color" style="background: #4575b4;"></div>
+              <span>Strong Negative Correlation</span>
+            </div>
+          </div>
+          <div class="key-insights">
+            <h4><i class="fas fa-lightbulb"></i> Key Insights</h4>
+            <ul>
+              <li>Most countries show strong positive correlation between GDP and CO₂ emissions</li>
+              <li>Renewable energy share correlates negatively with PM2.5 exposure in several nations</li>
+              <li>Singapore shows unique correlation patterns due to its service-based economy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <p>ASEAN Climate & Economic Indicators Dashboard | Data Sources: World Bank, ASEAN Secretariat, IEA</p>
+</footer>
 
 <script>
 const specs = {
@@ -68,12 +393,14 @@ const specs = {
   "correlation": "https://raw.githubusercontent.com/qtong204/FIT3179_Assignment_2/refs/heads/main/specs/correlation.json"
 };
 
-// Embed each visualization (you can also inline your JSON directly instead of URLs)
+// Initialize all visualizations
 for (const [id, url] of Object.entries(specs)) {
-  vegaEmbed(`#${id}`, url, { actions: false }).catch(console.error);
+  vegaEmbed(`#${id}`, url, { 
+    actions: false,
+    renderer: 'svg'
+  }).catch(console.error);
 }
 </script>
 
 </body>
 </html>
-
