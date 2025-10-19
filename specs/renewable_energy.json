@@ -40,10 +40,10 @@
       {
         "title": "Note",
         "condition": {
-          "test": "datum.Renewable_Energy_% == 0",
+          "test": "datum['Renewable_Energy_%'] == 0",
           "value": "Official data not reported — assumed 0%"
         },
-       
+        "value": ""
       }
     ]
   },
