@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
-  "width": 1200,
-  "height": 900,
+  "width": 1000,
+  "height": 700,
   "title": "ASEAN Environmental Indicators (2010-2020)",
   "params": [
     {
