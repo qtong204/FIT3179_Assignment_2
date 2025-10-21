@@ -3,6 +3,7 @@
   "width": 900,
   "height": 600,
   "title": "ASEAN: GDP vs CO₂ Emissions (2010–2020)",
+  "colour": "white",
   "data": {
     "url": "https://raw.githubusercontent.com/qtong204/FIT3179_Assignment_2/refs/heads/main/ASEAN_economy_climate.csv",
     "format": {"type": "csv"}
