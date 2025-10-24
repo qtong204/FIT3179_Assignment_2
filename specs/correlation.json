@@ -50,7 +50,7 @@
       "field": "Correlation",
       "type": "quantitative",
       "title": "Correlation",
-      "scale": {"domain": [-1, 1], "scheme": "redblue"}
+      "scale": {"domain": [-1, 1], "scheme": "redblue", "reverse": true}
     },
     "tooltip": [
       {"field": "Var1", "title": "Variable 1"},
